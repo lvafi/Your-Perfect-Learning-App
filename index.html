@@ -1,13 +1,31 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>your-perfect-learning-app</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-[#212121] text-white">
+    <nav class="px-4 py-4 flex justify-between items-center">
+      <div class="font-bold text-l">Material Tailwind</div>
+      <nav class="hidden md:flex gap-4">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Docs</a>
+      </nav>
+      <div class="hidden md:flex space-x-4">
+        <button class="w-8 h-8 flex justify-center items-center rounded-lg hover:bg-white/20 duration-300"><img class="w-6 h-6" src="./src/assets/twitter-color-svgrepo-com.svg"></button>
+        <button class="w-8 h-8 flex justify-center items-center rounded-lg hover:bg-white/20 duration-300"><img class="w-6 h-5" src="./src/assets/facebook.svg"></button>
+        <button class="w-8 h-8 flex justify-center items-center rounded-lg hover:bg-white/20 duration-300"><img class="w-7 h-7" src="./src/assets/instagram-1-svgrepo-com.svg"></button>
+        <button class="w-[82px] h-[40px] bg-white text-black rounded">BLOCKS</button>
+      </div>  
+      <!--Mobile menu button-->
+      <button class="md:hidden" w-[40px] h-[40px] flex justify-center items-center">
+        <img class="w-6 h-6" src="./src/assets/hamburger.svg">
+      </button>  
+    </nav>
+  </header>
+</body>
 </html>
